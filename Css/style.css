@@ -1,0 +1,66 @@
+*{ box-sizing: border-box;}
+
+body {
+    background-color: #2848a0;
+    margin: 0 auto;
+    padding: 20px;
+    color: #96a7dd;
+    text-align: center;
+}
+
+/* Start Header */
+
+header {
+    padding: 50px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+
+h1 {
+    padding-bottom: 15px;
+    border-bottom: 3px solid #96a7dd;
+    text-shadow: 2px 4px 10px #101010;
+}
+
+/*start father div */
+
+.father {text-align: center;perspective: 1500px;}
+
+.father p{margin: 100px 30px 80px;}
+
+.card {
+    height: 400px;
+    width:300px;
+    margin:auto;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease-in-out;
+}
+
+.front , .back{height: 100%;width: 100%;border-radius: 10px;}
+
+.front{transform: rotateY(180deg);background-image: url(../Images/1.jpg);background-size: cover;}
+
+.front span {position: relative; top: 40px; font-size: 30px;color: black}
+
+.front p {position: relative;top: 40px;color: #fff}
+
+
+
+.back{
+    background-image: url(../Images/2.jpg);
+    background-size: cover;
+    backface-visibility: hidden;
+    position: relative;
+    top: -400px;
+    color: #fff;
+}
+
+.back span {position: relative; top: 100px; font-size: 30px}
+
+.back p {position: relative;top: 50px;color: #fff}
+
+.card:hover {transform: rotatey(180deg);}
+
+/*start footer */
+footer{margin-top: 100px;}
